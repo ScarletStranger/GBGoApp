@@ -23,7 +23,7 @@ func init() {
 func main() {
 	var cfg config.Config
 	ctx := context.Background()
-	if err := envconfig.Process(ctx, &cfg); err != nil { //nolint:typecheck
+	if err := envconfig.Process(ctx, &cfg); err != nil {
 		log.Fatal(err)
 	}
 

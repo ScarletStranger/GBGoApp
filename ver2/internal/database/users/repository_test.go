@@ -14,7 +14,6 @@ import (
 
 	"github.com/go-playground/assert/v2"
 	"github.com/google/uuid"
-	"github.com/jackc/pgx/v4"
 	"github.com/jackc/pgx/v4/pgxpool"
 	"github.com/sethvargo/go-envconfig"
 	"github.com/stretchr/testify/require"
@@ -177,7 +176,7 @@ func TestRepository_DeleteByUserID(t *testing.T) {
 	{
 		_, err := usersRepo.FindByID(ctx, u.ID)
 		if err != nil {
-			if !errors.Is(err, pgx.ErrNoRows) {
+			if !errors.Is(err, pgxpool.ErrNoRows) {
 				t.Fatal(err)
 			}
 		}

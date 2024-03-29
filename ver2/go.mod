@@ -1,6 +1,8 @@
 module gitlab.com/robotomize/gb-golang/homework/03-03-umanager
 
-go 1.21.0
+go 1.22
+
+toolchain go1.22.0
 
 require (
 	github.com/bxcodec/faker/v4 v4.0.0-beta.3
@@ -9,10 +11,10 @@ require (
 	github.com/go-playground/assert/v2 v2.2.0
 	github.com/google/uuid v1.6.0
 	github.com/jackc/pgconn v1.14.3
-	github.com/jackc/pgx/v4 v4.18.2
+	github.com/jackc/pgx/v4 v4.18.3
 	github.com/labstack/gommon v0.4.2
 	github.com/oapi-codegen/runtime v1.1.1
-	github.com/sethvargo/go-envconfig v1.0.0
+	github.com/sethvargo/go-envconfig v1.0.1
 	github.com/streadway/amqp v1.1.0
 	github.com/stretchr/testify v1.9.0
 	go.mongodb.org/mongo-driver v1.14.0
@@ -22,6 +24,7 @@ require (
 
 require (
 	github.com/apapsch/go-jsonmerge/v2 v2.0.0 // indirect
+	github.com/bxcodec/faker v2.0.1+incompatible
 	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/go-openapi/jsonpointer v0.21.0 // indirect
 	github.com/go-openapi/swag v0.23.0 // indirect

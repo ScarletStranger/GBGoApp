@@ -9,7 +9,7 @@ import (
 	"github.com/google/uuid"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 
-	"github.com/bxcodec/faker/v4"
+	"github.com/bxcodec/faker"
 
 	"gitlab.com/robotomize/gb-golang/homework/03-03-umanager/internal/database"
 )
